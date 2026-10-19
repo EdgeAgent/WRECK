@@ -1,0 +1,19 @@
+{
+  "name": "wreck-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WRECK: a universal, evidence-first LLM agent framework for authorized reverse engineering and web reconstruction",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "wreck": "src/cli.mjs"
+  },
+  "scripts": {
+    "wreck": "node src/cli.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/cli.mjs && node --test test/*.test.mjs"
+  },
+  "license": "MIT"
+}
